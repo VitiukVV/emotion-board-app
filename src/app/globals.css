@@ -1,4 +1,4 @@
-@import "tailwindcss";
+@import 'tailwindcss';
 
 :root {
   --background: #ffffff;
@@ -12,9 +12,27 @@
   --font-mono: var(--font-geist-mono);
 }
 
-
+html,
 body {
-  background: var(--background);
+  height: 100%;
+  margin: 0;
+  padding: 0;
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+body.theme-morning {
+  background: linear-gradient(to bottom, #fff8dc, #ffe4b5);
+}
+
+body.theme-day {
+  background: linear-gradient(to bottom, #e0f7fa, #b2ebf2);
+}
+
+body.theme-evening {
+  background: linear-gradient(to bottom, #ffccbc, #ffab91);
+}
+
+body.theme-night {
+  background: linear-gradient(to bottom, #263238, #000000);
 }
